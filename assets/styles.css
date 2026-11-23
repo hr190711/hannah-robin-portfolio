@@ -254,7 +254,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #3b8b83;outline-offset:4p
 
 .section-top-stacked{align-items:flex-start;flex-direction:column;gap:12px}
 .section-top-stacked .section-copy{max-width:760px}
-.card-image img.pid-thumb{object-position:center 72%}
+.card-image img.pid-thumb{object-position:center 45%}
 .story-caption a{color:var(--teal);font-weight:700}
 .story-caption a:hover{text-decoration:underline}
 .section-link-row{max-width:none;margin-top:18px}
