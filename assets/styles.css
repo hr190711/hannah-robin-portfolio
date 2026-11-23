@@ -1,16 +1,8 @@
 @font-face {
-  font-family: "Barlow Semi Condensed";
-  src: url("fonts/barlow-semi-condensed-500.woff2") format("woff2");
+  font-family: Baskervville;
+  src: url("fonts/baskervville.woff2") format("woff2");
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  src: url("fonts/barlow-semi-condensed-600.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 400 700;
   font-display: swap;
 }
 
@@ -34,7 +26,7 @@
   --rule-strong: #a99aa2;
   --blush: #f0dde6;
   --rose: #793d58;
-  --display: "Barlow Semi Condensed", "Arial Narrow", sans-serif;
+  --display: Baskervville, Georgia, serif;
   --sans: "Source Sans 3", system-ui, sans-serif;
   --space-1: .25rem;
   --space-2: .5rem;
@@ -68,7 +60,7 @@ body {
 h1, h2, h3, p, figure { margin: 0; }
 
 h1, h2, h3 {
-  font: 600 1.75rem/1.12 var(--display);
+  font: 500 1.625rem/1.16 var(--display);
   letter-spacing: -.015em;
   text-wrap: balance;
 }
@@ -183,12 +175,12 @@ button { color: inherit; font: inherit; cursor: pointer; }
   aspect-ratio: 1;
   background: var(--blush);
   color: var(--rose);
-  font: 600 1.125rem/1 var(--display);
+  font: 650 1.125rem/1 var(--sans);
 }
 
 .identity-name {
   display: block;
-  font: 600 1.35rem/1.1 var(--display);
+  font: 650 1.2rem/1.1 var(--sans);
 }
 
 .identity-sub {
@@ -257,9 +249,8 @@ button { color: inherit; font: inherit; cursor: pointer; }
 }
 
 .hero h1 {
-  max-width: 17ch;
   margin-block: var(--space-2) var(--space-4);
-  font-size: clamp(3.125rem, 5.35vw, 5rem);
+  font-size: clamp(2.9rem, 4.8vw, 4.35rem);
   line-height: 1.02;
   letter-spacing: -.025em;
   text-wrap: wrap;
@@ -281,17 +272,10 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .hero-lead { line-height: 1.55; }
 
 .hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem 1rem;
-  margin-block-start: var(--space-5);
-  padding-block-start: var(--space-3);
-  border-block-start: 1px solid var(--rule);
+  margin-block-start: var(--space-4);
   color: var(--body);
-  font-size: .875rem;
+  font-size: .9375rem;
 }
-
-.check { margin-inline-end: .35rem; color: var(--rose); }
 
 .portrait-frame {
   width: 100%;
@@ -327,12 +311,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 
 .section-top { margin-block-end: var(--space-6); }
 
-.section-top:has(.section-copy) {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: end;
-  gap: var(--space-3) var(--space-6);
-}
+.section-top .section-copy { margin-block-start: var(--space-3); }
 
 .section-heading, .story-copy h2, .cta-panel h2 {
   margin-block-start: var(--space-2);
@@ -340,7 +319,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
   line-height: 1.04;
 }
 
-.section-copy { max-width: 57ch; color: var(--body); }
+.section-copy { color: var(--body); }
 
 #work {
   border-block-start: 1px solid var(--rule);
@@ -379,26 +358,17 @@ button { color: inherit; font: inherit; cursor: pointer; }
   color: var(--rose);
 }
 
-/* Large opening studies followed by a denser index */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-5) var(--space-6);
-}
+/* The opening study gets more room for its technical image. */
+.project-grid { max-width: 66rem; }
 
 .project-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 5fr);
-  gap: var(--space-4);
-  min-width: 0;
-  padding-block-end: var(--space-5);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.15fr);
+  align-items: start;
+  gap: var(--space-6);
+  padding-block: var(--space-5);
   border-block-end: 1px solid var(--rule);
-}
-
-.project-card:nth-child(-n + 2) {
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto 1fr;
 }
 
 .project-card h3 a { text-decoration: none; }
@@ -423,7 +393,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
   background: var(--media);
 }
 
-.project-card:nth-child(-n + 2) .card-image img { aspect-ratio: 2 / 1; }
 .card-image .photo-thumbnail { object-fit: cover; }
 .card-image .pid-thumb { object-position: center 43%; }
 
@@ -439,8 +408,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .card-meta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--space-1) var(--space-2);
+  gap: var(--space-1) var(--space-4);
   color: var(--body);
 }
 
@@ -448,7 +416,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .card-year { font-variant-numeric: tabular-nums; }
 
 .project-card h3 { margin-block-start: var(--space-2); }
-.project-card:nth-child(-n + 2) h3 { font-size: clamp(1.875rem, 3vw, 2.5rem); }
 
 .project-card h3 a:is(:hover, :focus-visible) {
   color: var(--rose);
@@ -497,7 +464,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 
 .about-band, .beyond-preview { border-block: 1px solid var(--rule); }
 .about-band { background: var(--tint); }
-.about-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.about-grid { grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); }
 .prose { margin-block-start: var(--space-5); color: var(--body); }
 .prose p + p { margin-block-start: var(--space-4); }
 
@@ -517,17 +484,20 @@ button { color: inherit; font: inherit; cursor: pointer; }
   min-height: 2.75rem;
 }
 
-.capabilities { border-block-start: 2px solid var(--rule-strong); }
-
-.capability {
-  display: grid;
-  grid-template-columns: minmax(5.5rem, 1fr) minmax(0, 2.75fr);
-  gap: var(--space-2) var(--space-4);
-  padding-block: var(--space-4);
-  border-block-end: 1px solid var(--rule);
+.capabilities {
+  max-width: 32ch;
+  padding-inline-start: var(--space-5);
+  border-inline-start: 1px solid var(--rule-strong);
 }
 
-.capability h3 { font-size: 1.375rem; }
+.capability + .capability { margin-block-start: var(--space-4); }
+
+.capability h3 {
+  margin-block-end: var(--space-1);
+  color: var(--rose);
+  font: 650 1rem/1.3 var(--sans);
+}
+
 .capability p { color: var(--body); font-size: 1rem; }
 
 .beyond-preview { border-block-start: 0; background: var(--paper); }
@@ -695,14 +665,12 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .case-sidebar {
   position: sticky;
   inset-block-start: calc(var(--header-height) + 1.25rem);
-  padding: var(--space-5);
-  border-block-start: 2px solid var(--rule-strong);
-  background: var(--tint);
+  padding-inline-start: var(--space-5);
+  border-inline-start: 1px solid var(--rule-strong);
 }
 
 .case-sidebar h2 { margin-block-end: var(--space-4); }
-.sidebar-item { padding-block: var(--space-3); border-block-start: 1px solid var(--rule); }
-.sidebar-item:last-child { padding-block-end: 0; }
+.sidebar-item + .sidebar-item { margin-block-start: var(--space-4); }
 .sidebar-item span { display: block; font-size: .9375rem; color: var(--body); }
 
 .photo-gallery {
@@ -798,7 +766,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .lead-inline-photo.martial-tall { aspect-ratio: 4 / 3; object-fit: cover; object-position: center 80%; }
 .lead-card .mt-30 { margin-block-start: var(--space-6); }
 
-
 @media (min-width: 49rem) {
   .case-opening {
     display: grid;
@@ -861,13 +828,11 @@ button { color: inherit; font: inherit; cursor: pointer; }
 
   .mobile-nav a { padding: var(--space-2) var(--space-1); }
   .mobile-nav a + a { border-block-start: 1px solid var(--rule); }
-  .project-card { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; }
-  .card-image img { aspect-ratio: 16 / 10; }
 }
 
 @media (max-width: 47.5rem) {
   .case-grid { grid-template-columns: minmax(0, 1fr); }
-  .case-sidebar { position: static; order: -1; }
+  .case-sidebar { position: static; order: -1; padding-inline-start: var(--space-4); }
 }
 
 @media (max-width: 44rem) {
@@ -877,19 +842,22 @@ button { color: inherit; font: inherit; cursor: pointer; }
   }
 
   .hero-grid { align-items: start; }
-  .hero h1 { max-width: 100%; font-size: clamp(2.625rem, 10.2vw, 4.25rem); }
+  .hero h1 { font-size: clamp(2.45rem, 9.4vw, 4rem); }
   .hero-buttons { gap: var(--space-2); }
   .hero-buttons .button { padding-inline: .625rem; }
-  .section-top:has(.section-copy) { grid-template-columns: minmax(0, 1fr); }
   .portrait-frame { justify-self: start; max-width: 25rem; }
   .about-grid, .leadership-grid { gap: var(--space-6); }
   .case-visual { margin-block-start: var(--space-5); }
 }
 
 @media (max-width: 35rem) {
-  .project-grid, .photo-gallery, .lead-photo-grid { grid-template-columns: minmax(0, 1fr); }
-  .project-card { gap: var(--space-3); }
-  .project-card:nth-child(-n + 2) .card-image img { aspect-ratio: 16 / 10; }
+  .photo-gallery, .lead-photo-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-3);
+    padding-block: var(--space-5);
+  }
+  .card-image img { aspect-ratio: 16 / 10; }
   .filter-button { padding-inline: var(--space-2); }
   .case-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .next-row { flex-direction: column; }
@@ -898,5 +866,4 @@ button { color: inherit; font: inherit; cursor: pointer; }
 @media (max-width: 23rem) {
   .hero-buttons > .button { width: 100%; }
   .header-inner { gap: var(--space-2); }
-  .capability { grid-template-columns: minmax(0, 1fr); }
 }
