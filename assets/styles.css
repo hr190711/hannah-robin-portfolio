@@ -249,7 +249,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #3b8b83;outline-offset:4p
 .lead-inline-photo.martial-tall{
   height: 360px;
   object-fit: cover;
-  object-position: center 75%;
+  object-position: center 80%;
 }
 .mt-30{margin-top:30px!important}
 @media(max-width:950px){.hero-v3 .hero-grid{gap:35px}.portrait-frame{min-height:0}.hero-portrait{height:410px}.leadership-story{gap:32px}}
