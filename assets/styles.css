@@ -246,6 +246,10 @@ a:focus-visible,button:focus-visible{outline:3px solid #3b8b83;outline-offset:4p
 .lead-photo-grid img{width:100%;height:365px;object-fit:cover}
 .lead-photo-grid figcaption{padding:10px 15px 15px;color:var(--muted);font-size:.82rem}
 .lead-inline-photo{width:100%;height:210px;object-fit:cover;margin-top:20px;border-radius:11px}
+.lead-inline-photo.martial-tall{
+  height: 320px;
+  object-position: center top;
+}
 .mt-30{margin-top:30px!important}
 @media(max-width:950px){.hero-v3 .hero-grid{gap:35px}.portrait-frame{min-height:0}.hero-portrait{height:410px}.leadership-story{gap:32px}}
 @media(max-width:760px){.hero-v3{padding:58px 0}.hero-v3 .hero-grid,.beyond-grid,.leadership-story{grid-template-columns:1fr}.portrait-frame{max-width:560px;margin-top:12px}.hero-portrait{height:450px}.beyond-grid{gap:28px}.case-visual img{max-height:450px}.story-media img{height:350px}.lead-photo-grid img{height:280px}}
