@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 540" role="img" aria-label="Abstract conceptual engineering illustration"><defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eaf4f1"/><stop offset="1" stop-color="#e5eff2"/></linearGradient>
+ <pattern id="grid" width="29" height="29" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#8ab1b6" opacity=".3"/></pattern>
+ <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#477780" flood-opacity=".12"/></filter>
+ </defs><rect width="940" height="540" fill="url(#bg)"/><rect width="940" height="540" fill="url(#grid)"/>
+ <path d="M50 70H890 M50 470H890" stroke="#b5d1d1" stroke-width="1" opacity=".55"/>
+ <g fill="none" stroke="#628e97" stroke-width="1.2" opacity=".53"><path d="M55 100V440 M885 100V440"/></g>
+ 
+<g transform="translate(168 48)" stroke-linecap="round">
+ <rect x="82" y="30" width="260" height="387" rx="8" fill="#dce9e9" stroke="#497582" stroke-width="7"/>
+ <rect x="112" y="48" width="21" height="348" rx="5" fill="#a6c6cb"/><rect x="289" y="48" width="21" height="348" rx="5" fill="#a6c6cb"/>
+ <rect x="103" y="110" width="218" height="32" rx="6" fill="#4b7c89"/><rect x="103" y="311" width="218" height="32" rx="6" fill="#4b7c89"/>
+ <rect x="191" y="135" width="42" height="68" rx="5" fill="#7ca9ac"/><rect x="191" y="243" width="42" height="72" rx="5" fill="#7ca9ac"/>
+ <path d="M207 201L205 249 M217 201L219 249" stroke="#3b6c72" stroke-width="5"/>
+ <path d="M212 177V274" stroke="#f2fbf9" stroke-width="4" stroke-dasharray="5 6"/>
+</g>
+<g transform="translate(595 119)"><rect x="0" y="0" width="240" height="280" rx="13" fill="rgba(255,255,255,.75)" stroke="#bfd5d6" stroke-width="2"/>
+<path d="M36 42V225H207" fill="none" stroke="#8eafb4" stroke-width="2"/>
+<path d="M38 220C56 219 74 211 94 185S135 127 150 96S174 75 204 70" fill="none" stroke="#2f7b75" stroke-width="5"/>
+<path d="M38 220C70 207 114 156 142 105S179 83 204 82" fill="none" stroke="#78aca4" stroke-width="3" stroke-dasharray="5 6"/>
+<text x="32" y="30" fill="#547781" font-family="Arial" font-size="14">TENSILE RESPONSE</text>
+<text x="119" y="253" fill="#77939b" font-family="Arial" font-size="12">STRAIN</text>
+</g>
+ <text x="68" y="504" font-family="Arial,sans-serif" font-size="14" fill="#5a7c84" letter-spacing="3">CONCEPTUAL ILLUSTRATION</text>
+ <text x="867" y="504" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#5a7c84">H / R</text>
+ </svg>

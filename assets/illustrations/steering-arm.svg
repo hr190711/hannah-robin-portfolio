@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 540" role="img" aria-label="Abstract conceptual engineering illustration"><defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eaf4f1"/><stop offset="1" stop-color="#e5eff2"/></linearGradient>
+ <pattern id="grid" width="29" height="29" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#8ab1b6" opacity=".3"/></pattern>
+ <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#477780" flood-opacity=".12"/></filter>
+ </defs><rect width="940" height="540" fill="url(#bg)"/><rect width="940" height="540" fill="url(#grid)"/>
+ <path d="M50 70H890 M50 470H890" stroke="#b5d1d1" stroke-width="1" opacity=".55"/>
+ <g fill="none" stroke="#628e97" stroke-width="1.2" opacity=".53"><path d="M55 100V440 M885 100V440"/></g>
+ 
+<g transform="translate(78 7) rotate(-12 400 265)" filter="url(#sh)">
+<path d="M225 227 Q228 186 276 180 L340 180 Q359 178 368 158 Q388 111 426 112 Q476 112 492 158 Q499 180 519 185 L628 209 Q668 219 673 261 Q677 309 631 322 L520 340 Q496 344 490 366 Q477 411 428 411 Q385 412 366 368 Q356 344 335 344 L268 342 Q223 338 220 296Z" fill="#dae9eb" stroke="#3f7484" stroke-width="7"/>
+<path d="M270 238L356 239Q382 237 398 199L423 152 M275 285L357 284Q385 288 397 328L422 370 M497 249L602 252 M497 294L602 291" fill="none" stroke="#92b7bd" stroke-width="5"/>
+<circle cx="435" cy="261" r="63" fill="#f4faf9" stroke="#447986" stroke-width="7"/>
+<circle cx="435" cy="261" r="32" fill="#deeeee" stroke="#8bb7bb" stroke-width="5"/>
+<circle cx="270" cy="262" r="20" fill="#f4faf9" stroke="#447986" stroke-width="6"/>
+<circle cx="626" cy="268" r="20" fill="#f4faf9" stroke="#447986" stroke-width="6"/>
+</g>
+<g stroke="#739aa5" stroke-width="1.4" fill="none" opacity=".85"><path d="M160 126H769 M160 420H769" stroke-dasharray="8 7"/><path d="M162 119V428 M767 119V428" stroke-dasharray="8 7"/></g>
+<text x="736" y="114" font-family="Arial" fill="#527a83" font-size="15">7075 AL</text>
+ <text x="68" y="504" font-family="Arial,sans-serif" font-size="14" fill="#5a7c84" letter-spacing="3">CONCEPTUAL ILLUSTRATION</text>
+ <text x="867" y="504" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#5a7c84">H / R</text>
+ </svg>

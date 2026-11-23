@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 540" role="img" aria-label="Abstract conceptual engineering illustration"><defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eaf4f1"/><stop offset="1" stop-color="#e5eff2"/></linearGradient>
+ <pattern id="grid" width="29" height="29" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#8ab1b6" opacity=".3"/></pattern>
+ <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#477780" flood-opacity=".12"/></filter>
+ </defs><rect width="940" height="540" fill="url(#bg)"/><rect width="940" height="540" fill="url(#grid)"/>
+ <path d="M50 70H890 M50 470H890" stroke="#b5d1d1" stroke-width="1" opacity=".55"/>
+ <g fill="none" stroke="#628e97" stroke-width="1.2" opacity=".53"><path d="M55 100V440 M885 100V440"/></g>
+ 
+<g transform="translate(106 87)">
+<g stroke="#376e7f" stroke-width="7" stroke-linecap="round" fill="none">
+<path d="M135 104L281 172L388 87 M281 172L395 280"/>
+<circle cx="135" cy="104" r="19" fill="#e5f2ef"/><circle cx="281" cy="172" r="22" fill="#fff"/><circle cx="388" cy="87" r="17" fill="#e5f2ef"/><circle cx="395" cy="280" r="17" fill="#e5f2ef"/>
+</g>
+<g stroke="#42a093" stroke-width="6" fill="none"><path d="M139 118Q215 130 270 169"/><path d="M283 178L398 278"/></g>
+<path d="M298 175C320 170 326 146 341 139" stroke="#8eaaa9" stroke-width="2.5" stroke-dasharray="7 6" fill="none"/>
+</g>
+<g transform="translate(564 133)">
+<rect width="250" height="242" rx="13" fill="rgba(255,255,255,.78)" stroke="#c3d8d9" stroke-width="2"/>
+<path d="M31 187H221M31 37V188" stroke="#92b0b8" stroke-width="2" fill="none"/>
+<path d="M33 147C65 147 78 79 110 83S147 134 178 89S204 64 220 60" stroke="#256e7b" stroke-width="4" fill="none"/>
+<path d="M33 156C65 148 83 115 112 119S160 73 220 105" stroke="#67aca3" stroke-dasharray="7 6" stroke-width="4" fill="none"/>
+<text x="31" y="24" font-size="13" fill="#64838b" font-family="Arial">MODEL COMPARISON</text>
+<g font-family="Arial" font-size="12" fill="#6d8990"><text x="31" y="214">HILL-TYPE</text><text x="145" y="214">TITIN-BASED</text></g>
+</g>
+ <text x="68" y="504" font-family="Arial,sans-serif" font-size="14" fill="#5a7c84" letter-spacing="3">CONCEPTUAL ILLUSTRATION</text>
+ <text x="867" y="504" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#5a7c84">H / R</text>
+ </svg>
