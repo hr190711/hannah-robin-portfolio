@@ -90,7 +90,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 }
 
 .eyebrow, .availability, .identity-sub, .portrait-caption,
-.card-meta, .image-label, .card-tags, .crumbs, .case-meta strong,
+.card-meta, .image-label, .card-tags, .crumbs, .case-topic,
 .sidebar-item strong, .visual-caption, figcaption, .story-caption,
 .photo-credit, .small-number, .next-row > div > span, .footer {
   font-size: .875rem;
@@ -478,7 +478,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
   font-weight: 600;
 }
 
-.about-more, .section-link-row .text-link {
+.section-link-row .text-link {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
@@ -512,24 +512,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
   margin-block: var(--space-4) var(--space-5);
   color: var(--body);
 }
-
-.beyond-photo-link {
-  display: block;
-  text-decoration: none;
-}
-
-.beyond-photo-link img { width: 100%; }
-
-.beyond-photo-link span {
-  display: block;
-  padding: var(--space-3) var(--space-4);
-  background: var(--blush);
-  color: var(--rose);
-  font-size: .9375rem;
-  font-weight: 650;
-}
-
-.beyond-photo-link:hover span { text-decoration: underline; }
 
 /* Contact and footer */
 .cta-section {
@@ -586,34 +568,28 @@ button { color: inherit; font: inherit; cursor: pointer; }
   text-wrap: wrap;
 }
 
-.case-meta {
-  display: grid;
-  grid-template-columns: 1fr 1fr .55fr;
-  gap: var(--space-3) var(--space-5);
-  max-width: 52rem;
-  margin-block-start: var(--space-5);
-  padding-block-start: var(--space-4);
-  border-block-start: 1px solid var(--rule);
+/* Unboxed notes leave the case-study text and figures as the focal points. */
+.project-page .case-hero h1 {
+  font-size: clamp(2.55rem, 5.2vw, 4.35rem);
+  line-height: 1.06;
 }
 
-.case-meta strong, .sidebar-item strong {
+.case-topic { color: var(--rose); }
+
+.sidebar-item strong {
   display: block;
   margin-block-end: var(--space-1);
-  color: var(--rose);
+  color: var(--body);
   font-weight: 650;
 }
 
-.case-meta span { display: block; line-height: 1.35; }
-
 .case-visual { margin-block-start: var(--space-6); }
 
-.case-visual a {
-  display: block;
-  border: 1px solid var(--rule);
-  background: var(--paper);
-}
+.case-visual a { display: block; }
 
-.case-visual a:hover, .gallery-figure a:hover { border-color: var(--rose); }
+.case-visual a:hover img, .gallery-figure a:hover img {
+  outline: 1px solid var(--rose);
+}
 .case-visual img { width: 100%; }
 
 /* Fit the presentation to the format of the lead image. */
@@ -665,11 +641,11 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .case-sidebar {
   position: sticky;
   inset-block-start: calc(var(--header-height) + 1.25rem);
-  padding-inline-start: var(--space-5);
-  border-inline-start: 1px solid var(--rule-strong);
+  padding: var(--space-5);
+  background: var(--blush);
 }
 
-.case-sidebar h2 { margin-block-end: var(--space-4); }
+.case-sidebar h2 { margin-block-end: var(--space-4); font-size: 1.65rem; }
 .sidebar-item + .sidebar-item { margin-block-start: var(--space-4); }
 .sidebar-item span { display: block; font-size: .9375rem; color: var(--body); }
 
@@ -680,18 +656,9 @@ button { color: inherit; font: inherit; cursor: pointer; }
   margin-block-start: var(--space-4);
 }
 
-.gallery-figure a {
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--rule);
-  background: var(--paper);
-}
+.gallery-figure a { display: block; width: fit-content; max-width: 100%; }
 
-.gallery-image {
-  width: 100%;
-  aspect-ratio: 5 / 4;
-  object-fit: contain;
-}
+.gallery-image { width: auto; max-height: 24rem; }
 
 .gallery-figure figcaption { margin-block-start: var(--space-2); }
 
@@ -787,7 +754,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
     justify-self: end;
   }
 
-  .case-opening .case-hero h1 { font-size: clamp(3rem, 5.2vw, 4.75rem); }
 }
 
 @media (max-width: 58rem) {
@@ -832,7 +798,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 
 @media (max-width: 47.5rem) {
   .case-grid { grid-template-columns: minmax(0, 1fr); }
-  .case-sidebar { position: static; order: -1; padding-inline-start: var(--space-4); }
+  .case-sidebar { position: static; order: -1; padding: var(--space-4); }
 }
 
 @media (max-width: 44rem) {
@@ -859,7 +825,6 @@ button { color: inherit; font: inherit; cursor: pointer; }
   }
   .card-image img { aspect-ratio: 16 / 10; }
   .filter-button { padding-inline: var(--space-2); }
-  .case-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .next-row { flex-direction: column; }
 }
 
